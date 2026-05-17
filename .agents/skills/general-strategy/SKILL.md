@@ -28,6 +28,7 @@ description: Provides foundational knowledge and strategic heuristics for Terraf
 - **Cost vs. Value:** Ensure the player has enough MC (including resource conversions like Steel/Titanium) to actually afford the suggested play sequence.
 - **Dependency Verification:** Before recommending a card with an active ability (Action), verify that the player has the necessary production or resources to actually USE that action in the same or next generation (e.g., verify Energy production before playing 'Martian Rails').
 - **Map Context:** Check for map-specific placement bonuses (e.g., Olympus Mons card draw on Elysium) when suggesting tile placements.
+- **Proactive Context Loading:** After a deal is generated, you MUST immediately activate the skills for EVERY component of the hand: the 2 Corporations, 4 Preludes, and 10 Projects. Your first strategic analysis must be informed by the specific data, synergies, and tips contained within those specialized skills.
 
 ## Rule Nuances
 - **Tag Requirements:** You must have the required number of tags *already in play* (not including the tags on the card you are currently playing) to play a card.

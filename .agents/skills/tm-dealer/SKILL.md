@@ -31,7 +31,7 @@ Use the bundled Python script to generate a random deal based on selected varian
 
 **Command:**
 ```bash
-python3 .agents/skills/tm-dealer/scripts/deal_initial_research.py <num_players> --variant "<variant_name>" [--other-expansions "<expansion_list>"] [--user-id <1-N>] [--show-all]
+python3 .agents/skills/tm-dealer/scripts/deal_initial_research.py <num_players> --variant "<variant_name>" [--map "<map_name>"] [--other-expansions "<expansion_list>"] [--user-id <1-N>] [--show-all]
 ```
 
 **Expansions Reference:**
@@ -45,6 +45,8 @@ python3 .agents/skills/tm-dealer/scripts/deal_initial_research.py <num_players> 
 
 **Parameters:**
 - `<num_players>`: Total number of players in the game.
+- `--variant`: The game variant (e.g., "Base game", "Prelude").
+- `--map`: Optional: The name of the map (e.g., "Tharsis", "Hellas", "Elysium"). Providing this avoids an interactive prompt.
 - `--user-id`: The index of the current user (defaults to 1).
 - `--show-all`: Optional flag to reveal all players' cards (useful for debugging or solo-multiplay).
 

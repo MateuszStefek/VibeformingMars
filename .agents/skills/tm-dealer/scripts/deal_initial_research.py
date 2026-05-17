@@ -24,21 +24,30 @@ def main():
     parser.add_argument('--user-id', type=int, default=1)
     parser.add_argument('--variant', type=str, default="Base game")
     parser.add_argument('--other-expansions', type=str, default="")
+    parser.add_argument('--map', type=str, default=None)
     
     args = parser.parse_args()
     
     maps_data = load_maps_registry()
     map_options = maps_data['maps'] if maps_data else []
     
-    print("\nSelect Map:")
-    for i, m in enumerate(map_options):
-        print(f"{i+1}. {m['name']}")
+    selected_map = None
+    if args.map:
+        for m in map_options:
+            if m['name'].lower() == args.map.lower() or m['id'].lower() == args.map.lower() or args.map.lower() in m['name'].lower():
+                selected_map = m
+                break
     
-    map_choice = input(f"Enter choice (1-{len(map_options)}): ")
-    try:
-        selected_map = map_options[int(map_choice)-1]
-    except:
-        selected_map = map_options[0] # Default to Tharsis
+    if not selected_map:
+        print("\nSelect Map:")
+        for i, m in enumerate(map_options):
+            print(f"{i+1}. {m['name']}")
+        
+        map_choice = input(f"Enter choice (1-{len(map_options)}): ")
+        try:
+            selected_map = map_options[int(map_choice)-1]
+        except:
+            selected_map = map_options[0] # Default to Tharsis
 
     allowed = set(["Base Game (Basic)", "Base Game (Corporate Era)"])
     if "Prelude" in args.variant: 
