@@ -19,13 +19,14 @@ Use the bundled Python script to generate a random deal based on selected varian
   - **Preludes** (Base + Corporate Era + Prelude cards)
   - **Other** (Provide custom text/expansions)
 - When asking the user for the number of players, always provide explicit options for **2, 3, 4, and 5** players.
+- Always ask the user which **Map** they are playing on (**Tharsis**, **Hellas**, **Elysium**).
 - Sort all lists (**Corporations**, **Preludes**, **Projects**) alphabetically.
 - Group the deal into explicit categories with the following instructions:
   - **### CORPORATIONS (Choose 1)**
   - **### PRELUDES (Choose 2)**
   - **### PROJECTS (Choose any number - must pay 3MC each)**
 - Do **not** show "(Included in: [Expansion Name])" when displaying the cards in the initial deal.
-- Do **not** provide strategic advice during the dealing phase.
+- **PROHIBITION:** Do **NOT** provide strategic advice, "notes", or map-specific tips during the dealing phase. The deal must consist ONLY of the card lists and game setup data. Wait for a specific user prompt before offering strategy.
 - **Always use a code block (` ``` `) to display the card lists** to preserve the fixed-width alignment provided by the Python script.
 
 **Command:**

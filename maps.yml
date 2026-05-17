@@ -1,0 +1,257 @@
+maps:
+  - id: tharsis
+    name: Tharsis (Base Map)
+    milestones: [Terraformer, Mayor, Gardener, Builder, Planner]
+    awards: [Landlord, Scientist, Banker, Thermalist, Miner]
+    rows:
+      - y: 0
+        spaces:
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: ocean, bonuses: [STEEL, STEEL] }
+          - { type: land }
+          - { type: ocean, bonuses: [DRAW_CARD] }
+          - { type: ocean }
+      - y: 1
+        spaces:
+          - { type: land }
+          - { type: volcanic, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: ocean, bonuses: [DRAW_CARD, DRAW_CARD] }
+      - y: 2
+        spaces:
+          - { type: volcanic, bonuses: [DRAW_CARD] }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [STEEL] }
+      - y: 3
+        spaces:
+          - { type: volcanic, bonuses: [PLANT, TITANIUM] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+      - y: 4
+        spaces:
+          - { type: volcanic, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, name: "Noctis City", special: "Noctis City reserved" }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+      - y: 5
+        spaces:
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+      - y: 6
+        spaces:
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land }
+      - y: 7
+        spaces:
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land }
+          - { type: land, bonuses: [TITANIUM] }
+      - y: 8
+        spaces:
+          - { type: land, bonuses: [STEEL] }
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land }
+          - { type: land }
+          - { type: ocean, bonuses: [TITANIUM, TITANIUM] }
+
+  - id: hellas
+    name: Hellas
+    milestones: [Diversifier, Tactician, Polar Explorer, Energizer, Rim Settler]
+    awards: [Cultivator, Magnate, Space Baron, Excentric, Contractor]
+    rows:
+      - y: 0
+        spaces:
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, STEEL] }
+          - { type: land, bonuses: [PLANT] }
+      - y: 1
+        spaces:
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT, STEEL] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+      - y: 2
+        spaces:
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, DRAW_CARD] }
+      - y: 3
+        spaces:
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land, bonuses: [STEEL] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+      - y: 4
+        spaces:
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land }
+          - { type: ocean, bonuses: [DRAW_CARD] }
+          - { type: ocean, bonuses: [HEAT, HEAT, HEAT] }
+          - { type: ocean }
+          - { type: land, bonuses: [PLANT] }
+      - y: 5
+        spaces:
+          - { type: land, bonuses: [TITANIUM] }
+          - { type: land }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land }
+          - { type: ocean }
+          - { type: ocean, bonuses: [STEEL] }
+          - { type: land }
+      - y: 6
+        spaces:
+          - { type: ocean, bonuses: [TITANIUM, TITANIUM] }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [TITANIUM] }
+      - y: 7
+        spaces:
+          - { type: land, bonuses: [STEEL] }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land, bonuses: [HEAT, HEAT] }
+          - { type: land, bonuses: [HEAT, HEAT] }
+          - { type: land, bonuses: [TITANIUM] }
+          - { type: land, bonuses: [TITANIUM] }
+      - y: 8
+        spaces:
+          - { type: land }
+          - { type: land, bonuses: [HEAT, HEAT] }
+          - { type: land, name: "South Pole", bonuses: [OCEAN], special: "Great Aquifer placement bonus" }
+          - { type: land, bonuses: [HEAT, HEAT] }
+          - { type: land }
+
+  - id: elysium
+    name: Elysium
+    milestones: [Generalist, Specialist, Ecologist, Tycoon, Legend]
+    awards: [Celebrity, Industrialist, Desert Settler, Estate Dealer, Benefactor]
+    rows:
+      - y: 0
+        spaces:
+          - { type: ocean }
+          - { type: ocean, bonuses: [TITANIUM] }
+          - { type: ocean, bonuses: [DRAW_CARD] }
+          - { type: ocean, bonuses: [STEEL] }
+          - { type: land, bonuses: [DRAW_CARD] }
+      - y: 1
+        spaces:
+          - { type: volcanic, bonuses: [TITANIUM] }
+          - { type: land }
+          - { type: land }
+          - { type: ocean }
+          - { type: ocean }
+          - { type: land, bonuses: [STEEL, STEEL] }
+      - y: 2
+        spaces:
+          - { type: volcanic, bonuses: [TITANIUM, TITANIUM] }
+          - { type: land }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: ocean }
+          - { type: volcanic, name: "Olympus Mons", bonuses: [DRAW_CARD, DRAW_CARD, DRAW_CARD] }
+      - y: 3
+        spaces:
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: ocean, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT, STEEL] }
+      - y: 4
+        spaces:
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: ocean, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: land, bonuses: [PLANT, PLANT] }
+          - { type: volcanic, bonuses: [PLANT, TITANIUM] }
+      - y: 5
+        spaces:
+          - { type: land, bonuses: [STEEL] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land, bonuses: [PLANT] }
+          - { type: land }
+      - y: 6
+        spaces:
+          - { type: land, bonuses: [TITANIUM] }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land }
+      - y: 7
+        spaces:
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land }
+          - { type: land, bonuses: [STEEL, STEEL] }
+          - { type: land }
+      - y: 8
+        spaces:
+          - { type: land, bonuses: [STEEL] }
+          - { type: land }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land, bonuses: [DRAW_CARD] }
+          - { type: land, bonuses: [STEEL, STEEL] }

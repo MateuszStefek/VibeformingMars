@@ -13,6 +13,11 @@ def load_cards_registry():
     if not os.path.exists(yml_path): return None
     with open(yml_path, 'r') as f: return yaml.safe_load(f)
 
+def load_maps_registry():
+    yml_path = os.path.join(os.getcwd(), 'maps.yml')
+    if not os.path.exists(yml_path): return None
+    with open(yml_path, 'r') as f: return yaml.safe_load(f)
+
 def main():
     parser = argparse.ArgumentParser(description='Terraforming Mars Card Dealer')
     parser.add_argument('num_players', type=int)
@@ -22,6 +27,19 @@ def main():
     
     args = parser.parse_args()
     
+    maps_data = load_maps_registry()
+    map_options = maps_data['maps'] if maps_data else []
+    
+    print("\nSelect Map:")
+    for i, m in enumerate(map_options):
+        print(f"{i+1}. {m['name']}")
+    
+    map_choice = input(f"Enter choice (1-{len(map_options)}): ")
+    try:
+        selected_map = map_options[int(map_choice)-1]
+    except:
+        selected_map = map_options[0] # Default to Tharsis
+
     allowed = set(["Base Game (Basic)", "Base Game (Corporate Era)"])
     if "Prelude" in args.variant: 
         allowed.add("Prelude")
@@ -47,7 +65,10 @@ def main():
     random.shuffle(preludes)
     random.shuffle(projects)
     
-    print(f"You are player {args.user_id}.")
+    print(f"\nMap: {selected_map['name']}")
+    print(f"Milestones: {', '.join(selected_map['milestones'])}")
+    print(f"Awards: {', '.join(selected_map['awards'])}")
+    print(f"\nYou are player {args.user_id}.")
     print(f"Player {random.randint(1, args.num_players)} will start.")
     
     user_deal = {
