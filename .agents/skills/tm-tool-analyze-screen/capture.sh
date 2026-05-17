@@ -11,9 +11,10 @@ if [ -z "$PROJECT_ROOT" ]; then
     PROJECT_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 fi
 
-OUTPUT_DIR="$PROJECT_ROOT/tmp"
+OUTPUT_DIR="$PROJECT_ROOT/screenshots"
 mkdir -p "$OUTPUT_DIR"
-OUTPUT_FILE="$OUTPUT_DIR/gemini_screenshot.png"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+OUTPUT_FILE="$OUTPUT_DIR/gemini_screenshot_${TIMESTAMP}.png"
 
 # Execute interactive capture (waits for user to draw rectangle)
 gnome-screenshot -a -f "$OUTPUT_FILE"
